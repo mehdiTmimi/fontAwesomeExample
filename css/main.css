@@ -1,0 +1,25 @@
+li{
+    display: block;
+}
+
+li:nth-child(1)::before{
+    content: " \f007";
+    font-family: 'Font Awesome 5 Free';
+    color: red;
+    margin-right: 10px;
+    font-weight: 900;
+}
+li:nth-child(2)::before{
+    content: " \f098";
+    font-family: 'Font Awesome 5 Free';
+    color: blue;
+    margin-right: 10px;
+    font-weight: 900;
+}
+li:nth-child(3)::before{
+    content: " \f1b9";
+    font-family: 'Font Awesome 5 Free';
+    color: green;
+    margin-right: 10px;
+    font-weight: 900;
+}
