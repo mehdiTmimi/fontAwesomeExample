@@ -1,25 +1,163 @@
-li{
-    display: block;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    color:inherit;
+}
+img{
+    width: 50px;
+}
+body{
+    display: flex;
+}
+aside{
+    flex:2;
+    background-color: #f5f6f7;
+}
+aside>div:not(:first-child)
+{
+    padding: 0px 15px;
+}
+aside>div:nth-child(1)
+{
+    background-color: #eff1f2;
+    padding: 15px;
+    display: flex;
+}
+aside>div:nth-child(1)::after
+{
+    content:'\f002';
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    color: lightgray;
+    position:relative;
+    top:5px;
+    right: 20px;
+}
+aside input{
+    border: 1px solid lightgray;
+    font-size: 20px;
+    border-radius: 3px;
+}
+aside input::placeholder{
+   color:lightgray;
+   padding: 13px 15px;
+   font-size: 13px;
+}
+aside h3
+{
+   border-bottom: 2px solid #f56a6a;
+   display: inline-block;
+   padding-right: 8px;
+   padding-bottom: 7px;
+   margin-bottom: 11px;
+   font-size: 0.8em;
+   font-weight: bolder;
+}
+aside>div:nth-child(2) li
+{
+    text-transform: uppercase;
+    padding: 20px 0px;
+    color: rgb(71, 71, 71);
+    font-size: 0.7em;
+    font-weight: 100;
+}
+aside>div:nth-child(2) li:not(:last-child){
+    border-bottom: 1px solid lightgray;
+}
+aside>div>:nth-child(2) li:last-child{
+    border-bottom: 1.45pt solid rgb(200 196 196);
+    padding-bottom: 40px;
+}
+aside>div:nth-child(3){
+    margin-top: 40px;
+}
+aside>div:nth-child(3) p {
+    margin: 30px 0px 20px 0px;
+    font-size: 0.7em;
+    color: rgb(116, 116, 116);
+}
+.touch1{
+   
+   text-decoration: underline;
+   text-decoration-style: dotted;
+}
+.touch1::before{
+    content: '\f0e0';
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    color: #f56a6a;
 }
 
-li:nth-child(1)::before{
-    content: " \f007";
-    font-family: 'Font Awesome 5 Free';
-    color: red;
-    margin-right: 10px;
-    font-weight: 900;
+
+.touch2::before{
+    content: '\f095';
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    color: #f56a6a;
 }
-li:nth-child(2)::before{
-    content: " \f098";
-    font-family: 'Font Awesome 5 Free';
-    color: blue;
-    margin-right: 10px;
-    font-weight: 900;
+.touch3::before{
+    content: '\f015';
+    font-family: "font awesome 5 free";
+    font-weight: 600;
+    color: #f56a6a;
 }
-li:nth-child(3)::before{
-    content: " \f1b9";
-    font-family: 'Font Awesome 5 Free';
-    color: green;
-    margin-right: 10px;
-    font-weight: 900;
+.touch1,.touch2{
+    border-bottom:  1px solid lightgray;
+   
+}
+.touch1,.touch2,.touch3{
+    padding: 10px 0px;
+    color: rgb(71, 71, 71);
+    font-size: 0.7em;
+    font-weight: 100;
+}
+body>div{
+    flex:6;
+    display: flex;
+}
+.main header{
+    display: flex;
+    justify-content: space-between;
+}
+.main header ol{
+    display: flex;
+}
+.articles{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+article{
+    width: 350px;
+    padding: 50px 20px;
+}
+article img{
+    width: 100%;
+}
+.articles article:nth-child(3n+2){
+    border: 1px solid gray;
+    border-bottom: 0px;
+}
+.articles article:nth-child(2){
+    border-top: 0px;
+}
+.articles article:nth-child(3n+1){
+    border-top: 1px solid gray;
+    
+}
+.articles article:nth-child(1){
+    border-top: 0px;
+}
+.articles article:nth-child(3n){
+    border-top: 1px solid gray;
+    
+}
+.articles article:nth-child(3){
+    border-top: 0px;
 }
